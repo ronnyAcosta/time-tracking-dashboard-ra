@@ -190,7 +190,7 @@ main{
     flex-direction: column;
     width: 90%;
     min-width: 260px;
-    height: auto;
+    height: 160vh;
     margin: 100px 10%;
   }
 
