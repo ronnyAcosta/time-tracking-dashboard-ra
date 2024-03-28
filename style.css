@@ -188,11 +188,11 @@ main{
   main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 90%;
     min-width: 260px;
     height: 1500px;
-    margin: 140px 10%;
+    margin: 25% 10%;
   }
 
   .name-container, .freq-container, .time-container{
