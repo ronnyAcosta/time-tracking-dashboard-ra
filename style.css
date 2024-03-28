@@ -183,7 +183,7 @@ main{
 
 @media (max-width: 950px) {
   body{
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
   main{
     display: flex;
