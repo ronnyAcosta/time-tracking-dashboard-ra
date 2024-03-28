@@ -191,8 +191,8 @@ main{
     justify-content: flex-start;
     width: 90%;
     min-width: 260px;
-    height: 1500px;
-    margin: 25% 10%;
+    height: 2500px;
+    margin: 140px 10%;
   }
 
   .name-container, .freq-container, .time-container{
