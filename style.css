@@ -87,10 +87,9 @@ main{
 
 .stats:hover{
   cursor: pointer;
-}
-.stats:active{
   background-color: hsl(235, 45%, 61%);
 }
+
 .ellipsis{
   height: 4px;
 }
@@ -100,9 +99,6 @@ main{
   filter: brightness(100.0);
 }
 
-.ellipsis:active{
-  color: white;
-}
 
 .time-container{
   margin: 0 25px;
