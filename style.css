@@ -188,7 +188,7 @@ main{
   main{
     display: flex;
     flex-direction: column;
-    ustify-content: center;
+    justify-content: center;
     width: 90%;
     min-width: 260px;
     height: 1500px;
