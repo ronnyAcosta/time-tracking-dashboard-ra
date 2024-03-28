@@ -192,7 +192,7 @@ main{
     width: 90%;
     min-width: 260px;
     height: 160vh;
-    margin: 100px 10%;
+    margin: 25% 10%;
   }
 
   .name-container, .freq-container, .time-container{
