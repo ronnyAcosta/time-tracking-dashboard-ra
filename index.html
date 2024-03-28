@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      
+    </style>
+  </head>
+<body>
+  <main>
+    <div class="profile-container">
+      <div class="name-container">
+        <figure class="profile-picture-container"><img class="profile-picture" src="public/image-jeremy.png" alt="Jeremy"></figure>
+        <div>
+          <p class="report">Report for</p>
+          <p class="name">Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="freq-container">
+        <div id="daily" class="freq">Daily</div>
+        <div id="weekly" class="freq">Weekly</div>
+        <div id="monthly" class="freq">Monthly</div>
+      </div>  
+    </div>
+  
+    <div class="containers work-container">
+      <div class="stats">
+        <div class="title">
+          <div>Work</div>
+          <figure><img class="ellipsis" src="public/icon-ellipsis.svg" alt="..."></figure>
+        </div>
+        <div class="time-container">
+          <div class="time" id="work-time"></div> <!-- weekly -->
+          <div class="prev-time" id="prev-work-time"></div> <!-- weekly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="containers play-container">
+      <div class="stats">
+        <div class="title">
+          <div>Play</div>
+          <figure><img class="ellipsis" src="public/icon-ellipsis.svg" alt="..."></figure>
+        </div>
+        <div class="time-container">
+          <div class="time" id="play-time"></div> <!-- weekly -->
+          <div class="prev-time" id="prev-play-time"></div> <!-- weekly -->
+        </div>  
+      </div>   
+    </div>
+  
+    <div class="containers study-container">
+      <div class="stats">
+        <div class="title">
+          <div>Study</div>
+          <figure><img class="ellipsis" src="public/icon-ellipsis.svg" alt="..."></figure>
+        </div>
+        <div class="time-container">
+          <div class="time" id="study-time"></div> <!-- weekly -->
+          <div class="prev-time" id="prev-study-time"></div> <!-- weekly -->
+        </div>  
+      </div>   
+    </div>
+
+    <div class="containers exercise-container">
+      <div class="stats">
+        <div class="title">
+          <div>Exercise</div>
+          <figure><img class="ellipsis" src="public/icon-ellipsis.svg" alt="..."></figure>
+        </div>
+        <div class="time-container">
+          <div class="time" id="exercise-time"></div> <!-- weekly -->
+          <div class="prev-time" id="prev-exercise-time"></div> <!-- weekly -->
+        </div>  
+      </div>   
+    </div>
+    
+    <div class="containers social-container">
+      <div class="stats">
+        <div class="title">
+          <div>Social</div>
+          <figure><img class="ellipsis" src="public/icon-ellipsis.svg" alt="..."></figure>
+        </div>
+        <div class="time-container">
+          <div class="time" id="social-time"></div> <!-- weekly -->
+          <div class="prev-time" id="prev-social-time"></div> <!-- weekly -->
+        </div>  
+      </div>   
+    </div>
+  
+    <div class="containers self-care-container">
+      <div class="stats">
+        <div class="title">
+          <div>Self Care</div>
+          <figure><img class="ellipsis" src="public/icon-ellipsis.svg" alt="..."></figure>
+        </div>
+        <div class="time-container">
+          <div class="time" id="self-care-time"></div> <!-- weekly -->
+          <div class="prev-time" id="prev-self-care-time"></div> <!-- weekly -->
+        </div>  
+      </div>   
+    </div>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/ronnyAcosta" target="_blank">Ronny Acosta</a>.
+  </div>
+  <script src="main.js" type="module" ></script>
+</body>
+</html>

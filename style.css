@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+*{
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body{
+  height: 80vh;
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  margin: 10% 10px 0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  width: 875px;
+  height: 415px;
+}
+
+.profile-container {
+  grid-area: 1 / 1 / span 2 / span 1;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+.name-container{
+  background-color: hsl(246, 80%, 60%);
+  height: 60%;
+  padding: 28px 25px 0;
+  border-radius: 10px;
+}
+.profile-picture{
+  height: 70px;
+  border: 3px solid white;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.report{
+  font-size: small;
+  color: hsl(236, 100%, 87%);
+  margin: 5px 0;
+}
+.name{
+  font-size: xx-large;
+}
+
+.freq-container{
+  margin: 0 25px;
+}
+
+.freq{
+  margin: 20px 0;
+  color: hsl(236, 100%, 87%);
+}
+
+.freq:hover{
+  cursor: pointer;
+  color: white;
+}
+
+.selected{
+  color: white;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin: 0 25px 
+}
+
+.title div{
+  margin-top: 20px;
+}
+
+.stats:hover{
+  cursor: pointer;
+}
+.stats:active{
+  background-color: hsl(235, 45%, 61%);
+}
+.ellipsis{
+  height: 4px;
+}
+
+.ellipsis:hover{
+  cursor: pointer;
+  filter: brightness(100.0);
+}
+
+.ellipsis:active{
+  color: white;
+}
+
+.time-container{
+  margin: 0 25px;
+}
+
+.time{
+  font-size: 48px;
+  margin: 20px 0 10px;
+}
+
+.prev-time{
+  font-size: small;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+.containers{
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 15px);
+  background-position-y: calc(-8.5px);
+  background-size: 27%;
+  padding-top: 15%;
+  border-radius: 10px 10px 20px 20px;
+}
+
+
+.work-container{
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(public/icon-work.svg);
+  background-position-y: calc(-8.5px);
+}
+
+.play-container{
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(public/icon-play.svg);
+  background-position-y: calc(-5px);
+}
+
+.study-container{
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(public/icon-study.svg);
+  background-position-y: calc(-6px);
+
+}
+
+.exercise-container{
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(public/icon-exercise.svg);
+  background-position-y: calc(0px);
+}
+
+.social-container{
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(public/icon-social.svg);
+  background-position-y: calc(-13px);
+}
+
+.self-care-container{
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(public/icon-self-care.svg);
+  background-size: 25%;
+  background-position-y: calc(-12px);
+}
+.stats{
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.attribution { 
+  margin-top: 60px;
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 950px) {
+  body{
+    justify-content: space-evenly;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 260px;
+    height: auto;
+    margin: 100px 10%;
+  }
+
+  .name-container, .freq-container, .time-container{
+    display: flex;
+  }
+
+  .freq-container{
+    justify-content: space-around;
+  }
+
+  .name-container{
+    padding: 28px 25px 10px;
+    height: 50%;
+  }
+  .profile-picture{
+    margin-bottom: 0px;
+    
+  }
+  .name-container div{
+    margin-left: 20px;
+  }
+
+  .name{
+    font-size: x-large;
+    margin-right: 0;
+  }
+  .freq-container{
+    margin-bottom: 10px;
+  }
+
+  .time-container{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .time{
+    font-size: 27px;
+    margin: 5px 0 20px;
+  }
+
+  .containers{
+    background-position-y: calc(-9.5px);
+    background-size: 20%;
+    padding-top: 10%;
+  }
+  
+  .play-container{
+    background-position-y: calc(-4px);
+  }
+  
+  .study-container{
+    background-position-y: calc(-4px);
+  
+  }
+  
+  .exercise-container{
+    background-size: 22%;
+    background-position-y: calc(-1px);
+  }
+  
+  .social-container{
+    background-position-y: calc(-13px);
+  }
+  
+  .self-care-container{
+    background-position-y: calc(-15px);
+  }
+
+  .attribution{
+    margin-top: 0;
+  }
+}
